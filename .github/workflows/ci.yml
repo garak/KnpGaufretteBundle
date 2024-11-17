@@ -27,4 +27,6 @@ jobs:
         run: composer update --prefer-dist --no-progress --no-suggest --ansi
 
       - name: Run PHPUnit tests
+        env:
+          SYMFONY_DEPRECATIONS_HELPER: max[self]=0
         run: vendor/bin/simple-phpunit --coverage-text

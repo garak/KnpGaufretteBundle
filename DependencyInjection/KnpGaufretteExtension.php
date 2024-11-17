@@ -54,6 +54,9 @@ class KnpGaufretteExtension extends Extension
         }
     }
 
+    /**
+     * @return ?\Symfony\Component\Config\Definition\ConfigurationInterface
+     */
     public function getConfiguration(array $configs, ContainerBuilder $container)
     {
         // first assemble the adapter factories
